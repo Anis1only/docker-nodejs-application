@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = "anismullani/docker-nodejs-application" // Update with your Docker Hub username and app name
+        DOCKER_IMAGE_NAME = "anismullani/docker-nodejs-application" // Docker Hub username and app name
         DOCKER_REGISTRY = "docker.io"
-        DOCKER_CREDENTIALS = "docker-credentials" // Jenkins credentials ID for Docker login
+        DOCKER_CREDENTIALS = "docker-credentials" // Make sure this matches the credentials ID in Jenkins
         NODE_VERSION = "14-alpine"
     }
 
